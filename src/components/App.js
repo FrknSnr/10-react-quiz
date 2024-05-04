@@ -80,8 +80,8 @@ function reducer(state, action) {
     case "tick":
       return {
         ...state,
-        remainingTime: state.remainingTime - 1,
         status: state.remainingTime <= 0 ? "finished" : state.status,
+        remainingTime: state.remainingTime - 1,
       };
 
     default:
